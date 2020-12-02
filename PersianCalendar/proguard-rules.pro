@@ -27,3 +27,5 @@
 #}
 
 -dontobfuscate
+# Workaround for shrinker removing some assets containing underscore in name
+-keep class **.R$* {*;}
